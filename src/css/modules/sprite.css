@@ -1,0 +1,9 @@
+.icon-cog::before {
+  -webkit-mask: url(../img/sprite.svg#cog) no-repeat;
+  mask: url(../img/sprite.svg#cog) no-repeat;
+}
+
+.icon-folder-open::before {
+  -webkit-mask: url(../img/sprite.svg#folder-open) no-repeat;
+  mask: url(../img/sprite.svg#folder-open) no-repeat;
+}
