@@ -1,12 +1,10 @@
 {
   "extends": [
-    "stylelint-config-standard",
-    "stylelint-prettier/recommended"
+    "stylelint-config-recommended"
   ],
   "plugins": [
     "stylelint-no-unsupported-browser-features",
-    "stylelint-no-indistinguishable-colors",
-    "stylelint-prettier"
+    "stylelint-no-indistinguishable-colors"
   ],
   "rules": {
     "plugin/no-unsupported-browser-features": [
@@ -28,8 +26,7 @@
     "comment-whitespace-inside": null,
     "string-quotes": "single",
     "declaration-no-important": true,
-    "comment-empty-line-before": null,
-    "prettier/prettier": true
+    "comment-empty-line-before": null
   },
   "ignoreFiles": [
     "node_modules/**",

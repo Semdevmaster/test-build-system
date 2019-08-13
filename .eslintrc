@@ -4,15 +4,28 @@
     "es6": true
   },
   "extends": [
-    "prettier",
+    "airbnb-base",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:promise/recommended",
     "plugin:compat/recommended"
   ],
-  "rules": {
-    "no-console": "warn",
-    "no-debugger": "error"
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
   },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "no-console": "warn",
+    "no-debugger": "error",
+    "import/no-unresolved": "off"
   }
 }

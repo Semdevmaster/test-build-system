@@ -34,7 +34,7 @@ ij_css_space_after_colon = true
 ij_css_space_before_opening_brace = true
 ij_css_value_alignment = 0
 
-[{*.cjs, *.js}]
+[{*.cjs, *.js, *.ts}]
 tab_width = 2
 ij_continuation_indent_size = 2
 ij_javascript_align_imports = false
