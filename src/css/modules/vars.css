@@ -19,7 +19,7 @@
   --gray-color-900: #424242;
   --gap: 1rem;
   --max-width-container: 1140px;
-  --min-width-container: 320px;
+  --min-width-container: 280px;
 }
 
 @custom-media --sm (min-width: 600px);

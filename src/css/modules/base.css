@@ -3,6 +3,7 @@
 ::before,
 ::after {
   box-sizing: border-box;
+  border: 0 solid var(--gray-color-400, #808080);
   background-repeat: no-repeat;
 }
 
@@ -30,13 +31,13 @@ body {
   font-weight: 400;
   line-height: 1.2;
   position: relative;
-  display: grid;
-  align-content: space-between;
+  /*display: grid;*/
+  /*align-content: space-between;*/
+  /*grid-template-rows: auto 1fr auto;*/
   min-height: 100vh;
   margin: 0;
   color: var(--black, #000);
   background-color: var(--white, #fff);
-  grid-template-rows: auto 1fr auto;
 }
 
 ::before,
