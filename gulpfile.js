@@ -121,7 +121,10 @@ const css = () =>
       })
     ]))
     .pipe(gulpIf(!isDevelopment, gcmq()))
-    .pipe(gulpIf(!isDevelopment, gulpPurgeCss({ content: ['src/views/*.html', 'src/templates/*.html', 'src/js/**/*.js'] })))
+    .pipe(gulpIf(!isDevelopment, gulpPurgeCss({
+      content: ['src/views/*.html', 'src/templates/*.html', 'src/js/**/*.js'],
+      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+    })))
     .pipe(gulpIf(!isDevelopment, postcss([postcssCsso({
       restructure: false,
       comments: false
