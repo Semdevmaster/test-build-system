@@ -10,7 +10,6 @@ const postcssPresetEnv = require('postcss-preset-env')
 const postcssNormalize = require('postcss-normalize')
 const postcssImport = require('postcss-import')
 const postcssCsso = require('postcss-csso')
-const gcmq = require('gulp-group-css-media-queries')
 const gulpPurgeCss = require('gulp-purgecss')
 const webpack = require('webpack')
 const gulpwebpack = require('webpack-stream')
@@ -120,7 +119,6 @@ const css = () =>
         autoprefixer: { cascade: false }
       })
     ]))
-    .pipe(gulpIf(!isDevelopment, gcmq()))
     .pipe(gulpIf(!isDevelopment, gulpPurgeCss({
       content: ['src/views/*.html', 'src/templates/*.html', 'src/js/**/*.js'],
       defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
