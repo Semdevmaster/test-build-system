@@ -2,7 +2,6 @@
 @import 'modules/vars.css';
 @import 'modules/base.css';
 @import 'modules/sprite.css';
-@import 'modules/grid.css';
 @import 'modules/animations.css';
 /* components styles*/
 @import 'components/icon.css';
