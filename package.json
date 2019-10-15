@@ -51,7 +51,6 @@
     "gulp-favicons": "^2.3.1",
     "gulp-file-include": "^2.1.0",
     "gulp-flatten": "^0.4.0",
-    "gulp-group-css-media-queries": "^1.2.2",
     "gulp-html-minifier2": "^1.1.11",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^6.1.1",
@@ -65,6 +64,7 @@
     "gulp-uglify-es": "^1.0.4",
     "gulp-w3c-html-validator": "^1.4.4",
     "gulp-webp": "^4.0.1",
+    "lodash": "latest",
     "npmfiles": "^0.1.3",
     "postcss-csso": "^3.0.0",
     "postcss-import": "^12.0.1",
@@ -78,9 +78,8 @@
     "ts-node": "^8.4.1",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.6.4",
-    "webpack": "^4.41.1",
-    "webpack-stream": "^5.2.1",
-    "lodash": "latest"
+    "webpack": "^4.41.2",
+    "webpack-stream": "^5.2.1"
   },
   "scripts": {
     "production-build": "cross-env NODE_ENV=production gulp clean build faviconsGenerator --series",
