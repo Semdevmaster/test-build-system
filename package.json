@@ -61,7 +61,7 @@
     "gulp-remember": "^1.0.1",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-typescript": "^5.0.1",
-    "gulp-uglify-es": "^1.0.4",
+    "gulp-uglify-es": "^2.0.0",
     "gulp-w3c-html-validator": "^1.4.4",
     "gulp-webp": "^4.0.1",
     "lodash": "latest",
