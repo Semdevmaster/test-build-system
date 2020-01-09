@@ -78,7 +78,8 @@
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.7.4",
     "webpack": "^4.41.5",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^5.2.1",
+    "lodash": "latest"
   },
   "scripts": {
     "production-build": "cross-env NODE_ENV=production gulp clean build faviconsGenerator --series",
