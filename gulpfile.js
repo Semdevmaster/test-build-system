@@ -139,7 +139,7 @@ exports.css = css
     .pipe(dest(cms.modx.js))
 exports.js = js*/
 /****************************************************************************************************/
-// JS TASK WITHOUT BABEL AND WEBPACK
+// JS TASK WITHOUT BABEL AND WEBPACK, BUT WITH TypeScript
 /****************************************************************************************************/
 const tsProject = ts.createProject('tsconfig.json')
 const js = () =>
@@ -174,7 +174,7 @@ const img = () =>
     .pipe(newer(cms.modx.img))
     .pipe(gulpIf(!isDevelopment, imagemin([
       imagemin.gifsicle({ interlaced: true }),
-      imagemin.jpegtran({ progressive: true }),
+      imagemin.mozjpeg({ progressive: true }),
       imagemin.optipng({ optimizationLevel: 5 }),
       imagemin.svgo({ removeViewBox: false, collapseGroups: true })
     ])))
