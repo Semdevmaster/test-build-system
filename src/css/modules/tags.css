@@ -3,10 +3,7 @@ hr:not([class]) {
   overflow: visible;
   height: 1px;
   border: 0;
-}
-
-hr:not([class]) {
-  background-color: var(--gray-color-500, #000);
+  @apply bg-gray-500;
 }
 
 h1,
@@ -16,7 +13,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  @apply mb-2;
 }
 
 h1 {
@@ -44,9 +41,9 @@ h6 {
 }
 
 p {
-  line-height: 1.5;
+  @apply leading-normal;
   margin-top: 0;
-  margin-bottom: 1rem;
+  @apply mb-4;
 }
 
 abbr[title],
@@ -60,14 +57,14 @@ abbr[data-original-title] {
 address {
   font-style: normal;
   line-height: inherit;
-  margin-bottom: 1rem;
+  @apply mb-4;
 }
 
 ul,
 ol,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  @apply mb-4;
 }
 
 ol ol,
@@ -98,20 +95,20 @@ dd {
 
 blockquote {
   margin: 0 0 1rem;
+  border-left: 4px solid theme('colors.info');
 }
 
 blockquote p {
-  line-height: 1.2;
+  @apply leading-tight;
   margin: 0;
   padding-left: 0.5rem;
-  border-left: 4px solid var(--info, #000);
 }
 
 cite {
   display: block;
   padding-top: 0.4rem;
   text-align: right;
-  color: var(--primary, #000);
+  @apply text-primary;
 }
 
 strong,
@@ -138,7 +135,7 @@ sup {
 
 mark {
   padding: 0.2em;
-  background-color: var(--warning, #fcf8e3);
+  @apply bg-warning;
 }
 
 table {
@@ -147,35 +144,40 @@ table {
   margin-top: 1em;
   margin-bottom: 1em;
   border-collapse: collapse;
-  border: 1px solid var(--black, #000);
+  border: 1px solid;
+  @apply border-gray-900;
 }
 
 tr {
-  border: 1px solid var(--black, #000);
+  border: 1px solid;
+  @apply border-gray-900;
 }
 
 tr:nth-of-type(even) {
-  background-color: var(--gray-color-200, #d3d3d3);
+  @apply bg-gray-200;
 }
 
 td {
   padding: 15px;
-  border: 1px solid var(--black, #000);
+  border: 1px solid;
+  @apply border-gray-900;
 }
 
 th {
   font-weight: 700;
   padding: 15px;
   text-align: inherit;
-  border: 1px solid grey;
+  border: 1px solid;
+  @apply border-gray-900;
 }
+
 
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   caption-side: bottom;
   text-align: left;
-  color: var(--info, #6c757d);
+  @apply text-info;
 }
 
 img {
@@ -205,14 +207,13 @@ figcaption {
 }
 
 a:not([class]) {
-  text-decoration: none;
-  color: var(--accent, #007bff);
+  text-decoration: underline;
+  @apply text-accent;
   background-color: transparent;
 }
 
 a:not([class]):hover {
-  text-decoration: underline;
-  color: var(--accent, #0056b3);
+  text-decoration: none;
 }
 
 pre,
@@ -231,7 +232,8 @@ pre {
 
 details {
   position: relative;
-  border-bottom: 1px solid var(--gray-color-300, #808080);
+  border-bottom: 1px solid;
+  @apply border-gray-300;
 }
 
 summary {
@@ -256,7 +258,7 @@ details summary::before {
 }
 
 summary:hover {
-  color: var(--primary, #808080);
+  @apply text-primary;
 }
 
 summary:focus {
@@ -269,10 +271,6 @@ summary + * {
 
 details[open] summary::before {
   transform: rotate(90deg);
-}
-
-details[open] > summary {
-  color: var(--primary, #000);
 }
 
 textarea {

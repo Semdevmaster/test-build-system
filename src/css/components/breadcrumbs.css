@@ -23,7 +23,7 @@
   margin-left: 0.3em;
   content: '/';
   text-align: center;
-  color: var(--gray-color-400);
+  @apply text-gray-400;
 }
 
 .breadcrumbs__item--active {
@@ -31,7 +31,11 @@
 }
 
 .breadcrumbs__element {
-  color: var(--gray-color-600);
+  @apply text-gray-600;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 @supports (--test: value) {

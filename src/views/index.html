@@ -1,45 +1,14 @@
 @@include('_head.html')
-<header
-  class="container full-width-outside py-4 mb-4 bg-gray-600 flex flex-wrap justify-between">
-  <div class="logo text-2xl">Company</div>
+<header class="container outside-container py-4 mb-4 bg-primary flex flex-wrap justify-between">
+  <div class="text-2xl">Company</div>
 </header>
 <main class="container">
-  <ol class="breadcrumbs breadcrumbs--type-mrow" itemscope itemtype="https://schema.org/BreadcrumbList">
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a href="https://example.com/books" class="breadcrumbs__element" itemscope itemtype="https://schema.org/Thing" itemprop="item">
-        <span itemprop="name">Books</span>
-      </a>
-      <meta itemprop="position" content="1">
-    </li>
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a href="https://example.com/books" class="breadcrumbs__element" itemscope itemtype="https://schema.org/Thing" itemprop="item">
-        <span itemprop="name">Books</span>
-      </a>
-      <meta itemprop="position" content="2">
-    </li>
-    <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a class="breadcrumbs__element" itemscope itemtype="https://schema.org/Thing" itemprop="item">
-        <span itemprop="name">Books</span>
-      </a>
-      <meta itemprop="position" content="3">
-    </li>
-  </ol>
-  <hr>
-  <button
-    class="btn hover:text-accent ripple icon icon-folder-open icon-margin-right-sm items-start">
-    button
-  </button>
-  <hr>
-  <h1>Hello world</h1>
-  <button class="btn bg-primary ripple">button</button>
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolore
-    exercitationem explicabo non obcaecati repudiandae. Accusamus ad aliquam
-    autem commodi, culpa deleniti dignissimos ducimus necessitatibus nisi
-    quisquam sapiente soluta voluptatibus!</p>
-
+  @@include('_breadcrumbs.html')
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-auto-fit gap-4">
+    <div class="p-6 bg-pink-600 ripple"></div>
+  </div>
 </main>
-<footer class="container full-width-outside bg-gray-800 text-white py-6">
+<footer class="container outside-container bg-gray-800 text-white py-6">
   <small class="block text-center">&copy; Company 2019</small>
 </footer>
 @@include('_foot.html')

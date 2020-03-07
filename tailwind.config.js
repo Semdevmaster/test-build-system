@@ -4,15 +4,14 @@ module.exports = {
   separator: ':',
   theme: {
     screens: {
-      sm: '600px',
-      md: '900px',
-      lg: '1200px',
-      xl: '1800px'
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      'print': { 'raw': 'print' }
     },
     colors: {
       transparent: 'transparent',
-      black: '#212121',
-      white: '#fff',
       primary: '#2957a5',
       secondary: '#25363c',
       accent: '#f57f17',
@@ -20,6 +19,30 @@ module.exports = {
       warning: '#ffc107',
       info: '#607d8b',
       success: '#4caf50',
+      black: {
+        default: '#000',
+        100: 'rgba(0,0,0,.1)',
+        200: 'rgba(0,0,0,.2)',
+        300: 'rgba(0,0,0,.3)',
+        400: 'rgba(0,0,0,.4)',
+        500: 'rgba(0,0,0,.5)',
+        600: 'rgba(0,0,0,.6)',
+        700: 'rgba(0,0,0,.7)',
+        800: 'rgba(0,0,0,.8)',
+        900: 'rgba(0,0,0,.9)',
+      },
+      white: {
+        default: '#fff',
+        100: 'rgba(255,255,255,.1)',
+        200: 'rgba(255,255,255,.2)',
+        300: 'rgba(255,255,255,.3)',
+        400: 'rgba(255,255,255,.4)',
+        500: 'rgba(255,255,255,.5)',
+        600: 'rgba(255,255,255,.6)',
+        700: 'rgba(255,255,255,.7)',
+        800: 'rgba(255,255,255,.8)',
+        900: 'rgba(255,255,255,.9)',
+      },
       gray: {
         100: '#fafafa',
         200: '#f5f5f5',

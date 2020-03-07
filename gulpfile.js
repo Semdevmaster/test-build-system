@@ -10,6 +10,7 @@ const postcssPresetEnv = require('postcss-preset-env')
 const postcssNormalize = require('postcss-normalize')
 const postcssImport = require('postcss-import')
 const postcssCsso = require('postcss-csso')
+const tailwind = require('tailwindcss')
 const gulpPurgeCss = require('gulp-purgecss')
 const webpack = require('webpack')
 const gulpwebpack = require('webpack-stream')
@@ -110,6 +111,7 @@ const css = () =>
     .pipe(postcss([
       postcssImport({ path: ['src/css'] }),
       postcssNormalize({ forceImport: true }),
+      tailwind(),
       postcssPresetEnv({
         stage: 2,
         features: {
